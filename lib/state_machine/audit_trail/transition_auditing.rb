@@ -3,7 +3,7 @@
 # the transition_class is the class for the model which holds the audit_trail
 
 module StateMachine::AuditTrail::TransitionAuditing
-  attr_accessor :transition_class_name
+  attr_accessor :transition_class_name, :user_id
 
   # Public tells the state machine to hook in the appropriate before / after behaviour
   #

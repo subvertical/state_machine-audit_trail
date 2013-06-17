@@ -1,5 +1,5 @@
 class StateMachine::AuditTrail::Backend::ActiveRecord < StateMachine::AuditTrail::Backend
-  attr_accessor :context_to_log
+  attr_accessor :context_to_log, :user_id
 
   def initialize(transition_class, context_to_log = nil)
     self.context_to_log = context_to_log
